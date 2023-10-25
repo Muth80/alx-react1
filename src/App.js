@@ -1,19 +1,20 @@
 import React from 'react'; // Import React
-import logo from './src/logo.jpg';
-import './App.css';
+import logo from './images/logo.jpg'; // Import logo
+import './App.css'; // Import CSS styles
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>School dashboard</h1> {/* Added an h1 with the text School dashboard */}
+        <h1 className="App-header-text">School dashboard</h1>
       </header>
-      <div className="App-body"> {/* Added a div with a class named App-body */}
-        <p>Login to access the full dashboard</p> {/* Added a paragraph with the specified text */}
+      <div className="App-body">
+        <p className="App-body-text">Login to access the full dashboard</p>
       </div>
-      <div className="App-footer"> {/* Added a div with a class named App-footer */}
-        <p>Copyright 2020 - Holberton School</p> {/* Added a paragraph with the specified text */}
+      <div className="App-footer">
+        <p className="App-footer-text">Copyright 2020 - Holberton School</p>
       </div>
     </div>
   );
